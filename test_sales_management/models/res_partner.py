@@ -7,7 +7,6 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
 
     credit_limit = fields.Integer(string="Credit Limit")
-    credit = fields.Integer(Stirng="Total Receivable")
     is_over_credit = fields.Boolean(Stirng="Over Credit")
     act_cl_exceeded = fields.Selection([('do_nothing', 'Do Nothing'),
                                         ('warn', 'Warn'),
